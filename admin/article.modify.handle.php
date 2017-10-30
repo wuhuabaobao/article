@@ -8,8 +8,8 @@
 	$dateline =  time();
 	$updatesql = "update articleInfo set title='$title',author='$author',description='$description',content='$content',dateline=$dateline where id=$id";
 	if(mysqli_query($con,$updatesql)){
-		echo "<script>alert('修改文章成功');window.location.href='article.modify.php';</script>";
+		echo "<script>alert('修改文章成功');window.location.href='article.manage.php';</script>";
 	}else{
-		echo "<script>alert('修改文章失败');window.location.href='article.modify.php';</script>";
+		echo "<script>alert('修改文章失败');window.location.href='article.manage.php';</script>";
 	}
 ?>

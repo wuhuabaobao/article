@@ -1,8 +1,9 @@
 <?php
 	require_once('../connect.php');
 	//读取旧信息
-//	$id = $_GET['id'];
-	$query = mysqli_query($con,"select * from articleInfo where id=2");
+	$id = $_GET['id'];
+
+	$query = mysqli_query($con,"select * from articleInfo where id=$id");
 
 	$data = mysqli_fetch_assoc($query);
 ?>
