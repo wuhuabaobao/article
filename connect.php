@@ -2,16 +2,17 @@
 	
 	require_once('config.php');	
 	//连库
-		if(!($con=mysqli_connect(HOST,USERNAME,PASSWORD))){
+		if(!($con=mysqli_connect(HOST,USERNAME,PASSWORD,DATABASE))){
 			echo mysql_error();
 		}			
-	//选库
-		if(!(mysqli_select_db($con,'article'))){			
-			echo mysql_error();			
-		}	
+	//选库     现在可以把 选库集成到   连库里面
+//		if(!(mysqli_select_db($con,'article'))){			
+//			echo mysql_error();			
+//		}	
 	
 	//字符集
-		if((!mysqli_query($con,'set names utf8'))){
+
+		if(!mysqli_query($con,'set names utf8')){
 			echo mysql_error();
 		}
 	

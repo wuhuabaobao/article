@@ -29,7 +29,19 @@ values('$title','$author','$description','$content',$dateline)";
 
 if(mysqli_query($con,$sql)){
 	
+	
+		
+//		echo "ID of last inserted record is: " . mysqli_insert_id($con);
+
+		$uid=mysqli_insert_id($con);
+
+   		
+	echo "<script>alert($uid)</script>" ;
+	
 	echo "<script>alert('发布文章成功'),window.location.href='article.add.php'</script>";
+	
+	
+
 	
 }
 else{
