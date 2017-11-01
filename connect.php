@@ -5,6 +5,10 @@
 		if(!($con=mysqli_connect(HOST,USERNAME,PASSWORD,DATABASE))){
 			echo mysql_error();
 		}			
+
+//$con=mysqli_connect(HOST,USERNAME,PASSWORD,DATABASE) or die(mysql_error());
+
+
 	//选库     现在可以把 选库集成到   连库里面
 //		if(!(mysqli_select_db($con,'article'))){			
 //			echo mysql_error();			

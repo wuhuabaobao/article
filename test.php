@@ -19,12 +19,12 @@
 //	$row = mysqli_fetch_row($query);
 //	print_r($row);
 	
-//	mysqli_fetch_row 循环打印   一维数组
-//		while($row=mysqli_fetch_row($query)){
-//			print_r($row);			
-//		}
+//	mysqli_fetch_row 循环打印   一维数组    每个数组是单独分开的
+		while($row=mysqli_fetch_row($query)){
+			print_r($row);			
+		}
 
-//  mysqli_fetch_row 循环打印 二维数组
+//  mysqli_fetch_row 循环打印 二维数组  数据是共同存在一个大的二维数组里面
 //		while($row=mysqli_fetch_row($query)){
 //			$data[] = $row;		
 //		}
@@ -38,12 +38,12 @@
 //	print_r($row);
 	
 	
-//	mysqli_fetch_array 循环打印   一维数组
+//	mysqli_fetch_array 循环打印   一维数组  每个数组是单独分开的
 //		while($row=mysqli_fetch_array($query)){
 //			print_r($row);			
 //		}
 	
-//  mysqli_fetch_array 循环打印 二维数组
+//  mysqli_fetch_array 循环打印 二维数组  数据是共同存在一个大的二维数组里面
 //		while($row=mysqli_fetch_array($query,MYSQL_ASSOC)){
 //			$data[] = $row;		
 //		}
@@ -68,12 +68,12 @@
 //	$row = mysqli_fetch_assoc($query);
 //	print_r($row);
 	
-//	mysqli_fetch_assoc 循环打印   一维数组
+//	mysqli_fetch_assoc 循环打印   一维数组   每个数组是单独分开的
 //		while($row=mysqli_fetch_assoc($query)){
 //			print_r($row);			
 //		}
 
-//  mysqli_fetch_assoc 循环打印 二维数组
+//  mysqli_fetch_assoc 循环打印 二维数组  数据是共同存在一个大的二维数组里面
 //		while($row=mysqli_fetch_assoc($query)){
 //			$data[] = $row;		
 //		}
